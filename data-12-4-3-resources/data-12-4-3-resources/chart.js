@@ -91,20 +91,8 @@ function buildCharts(sampleID) {
     
    }
     ];
-    // 9. Create the layout for the bar chart. 
-    var barLayout = {
-      width: 500, height: 500,
-      title: "Top 10 Bacteria Cultures Found",
-      margin: { t: 25, l: 120 }
-     
-    };
-
-    // 10. Use Plotly to plot the data with the layout. 
-    Plotly.newPlot("bar", barData, barLayout);
-  });
-}
-
-// Bar and Bubble charts
+    
+    // Bar and Bubble charts
 // 1. Create the trace for the bubble chart.
 var bubbleData = [
   {
@@ -135,3 +123,16 @@ var bubbleData = [
    // 3. Use Plotly to plot the data with the layout.
    Plotly.newPlot("bubble, bubbleData, bubbleLayout"); 
   
+    // 9. Create the layout for the bar chart. 
+    var barLayout = {
+      width: 500, height: 500,
+      title: "Top 10 Bacteria Cultures Found",
+      margin: { t: 25, l: 120 }
+     
+    };
+
+    // 10. Use Plotly to plot the data with the layout. 
+    Plotly.newPlot("bar", barData, barLayout);
+  });
+}
+
