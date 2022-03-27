@@ -127,7 +127,7 @@ var bubbleData = [
      hovermode: "closest",
      xaxis: { title: "OTU ID" },
      margin: { t:30 },
-     paper_bgcolor: "lightblue"
+     paper_bgcolor: "lightpink"
      
    };
 
@@ -137,8 +137,8 @@ var bubbleData = [
    // Gauge chart
 
    // 1. Create a variable that filters the metadata array for the object with the desired sample number.
-   var metaData = data.metaData
-   var metadataArray = metaData.filter(sample => sample['id'] === sampleID)
+   var metaData = data.metadata
+   var metadataArray = metaData.filter(sample => sample['id'] == sampleID)
 
     // 2. Create a variable that holds the first sample in the metadata array.
    var metaresults = metadataArray[0];
